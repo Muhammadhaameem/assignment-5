@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var product= [
+      {
+        "id": 1,
+        "name": "Product A",
+        "description": "This is the description for Product A.",
+        "price": 19.99,
+        "category": "Electronics"
+      },
+      {
+        "id": 2,
+        "name": "Product B",
+        "description": "This is the description for Product B.",
+        "price": 29.99,
+        "category": "Clothing"
+      },
+      
+      {
+        "id": 3,
+        "name": "Product A",
+        "description": "This is the description for Product C.",
+        "price": 19.99,
+        "category": "Grocery"
+      },
+      {
+        "id": 4,
+        "name": "Product B",
+        "description": "This is the description for Product D.",
+        "price": 29.99,
+        "category": "Cosmetics"
+      }]
+    
+    //  using for of method
+   var result= Object.entries(product)
+   for(array of product)
+   {
+    console.log(array)
+   }
+
+  //  using for each method
+
+  var totalPrice=0
+
+  var price=Object.values(product)
+  product.forEach(element => {
+  console.log(element.price)
+  totalPrice=totalPrice+element.price
+
+  });
+  console.log(totalPrice)
+
+  //  using for in
+
+  let details=""
+  for(let y in product)
+  {
+    // details=product[y]
+    console.log(product[y].name)
+
+  }
+  
+  
+
+
+    </script>
+</body>
+</html>
